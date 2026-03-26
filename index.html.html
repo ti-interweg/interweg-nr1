@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NR-1 Atualizada | Interweg Seguros</title>
+  <meta name="description" content="A NR-1 mudou. Riscos psicossociais passam a ser obrigatórios no PGR a partir de maio de 2026. Saiba como a Interweg apoia sua empresa." />
+
+  <!-- ============================================================
+       GOOGLE TAG MANAGER
+       Substitua GTM-XXXXXXX pelo seu ID real do GTM
+  ============================================================ -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- ============================================================
+       GOOGLE ANALYTICS 4 (GA4)
+       Substitua G-XXXXXXXXXX pelo seu Measurement ID real do GA4
+  ============================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      page_title: 'NR-1 Interweg',
+      page_location: window.location.href
+    });
+  </script>
+  <!-- End Google Analytics 4 -->
+
+  <style>
+    :root{
+      --teal:#00b3a4;
+      --teal-2:#009688;
+      --teal-dark:#007a6e;
+      --text:#0b1220;
+      --muted:#5b677a;
+      --bg:#ffffff;
+      --card:#f4fafa;
+      --border:rgba(0,179,164,.18);
+      --shadow:0 10px 30px rgba(0,150,136,.10);
+      --radius:18px;
+      --radius-sm:12px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+    /* ── Topbar ── */
+    .topbar{
+      position:sticky; top:0; z-index:10;
+      background:#0a1b34;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .topbar-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      height:72px; gap:16px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none;}
+    .brand-logo{height:45px; width:auto; display:block;}
+
+    .nav-actions{display:flex; gap:10px; align-items:center}
+
+    /* ── Buttons ── */
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      border-radius:999px; padding:12px 22px;
+      border:1px solid var(--border);
+      background:#fff; font-weight:700; font-size:14px;
+      text-decoration:none; cursor:pointer;
+      transition:transform .06s ease, box-shadow .2s ease, background .2s ease;
+      user-select:none; white-space:nowrap;
+    }
+    .btn:hover{box-shadow:0 10px 25px rgba(0,150,136,.18)}
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--teal),var(--teal-2));
+      color:#fff;
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .btn-outline{
+      background:transparent; color:#fff;
+      border:1px solid rgba(255,255,255,.22);
+    }
+    .btn-outline:hover{background:rgba(255,255,255,.06); box-shadow:none;}
+    .btn-whatsapp{border-color:rgba(37,211,102,.35);}
+
+    /* ── Hero ── */
+    .hero{
+      padding:60px 0 28px;
+      background:
+        linear-gradient(135deg, rgba(0,179,164,.07) 0%, transparent 55%),
+        radial-gradient(900px 350px at 90% 5%, rgba(0,150,136,.06), transparent 60%);
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:stretch;
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 14px;
+      border:1px solid rgba(0,179,164,.3);
+      background:rgba(0,179,164,.08);
+      border-radius:999px;
+      color:var(--teal-dark); font-weight:700; font-size:13px;
+      width:fit-content; margin-bottom:16px;
+    }
+    .kicker-dot{
+      width:8px; height:8px; border-radius:50%;
+      background:var(--teal); display:inline-block;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse{
+      0%,100%{opacity:1} 50%{opacity:.35}
+    }
+    h1{
+      margin:0 0 12px;
+      font-size:42px; line-height:1.1; letter-spacing:-.6px;
+    }
+    h1 em{
+      font-style:normal;
+      color:var(--teal);
+    }
+    .subtitle{
+      margin:0 0 8px; font-size:18px;
+      color:var(--muted); max-width:54ch;
+    }
+    .hero-actions{display:flex; gap:12px; flex-wrap:wrap; margin:20px 0 10px}
+    .note{color:var(--muted); font-size:13px; margin-top:10px;}
+    .deadline-badge{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:6px 14px; border-radius:999px;
+      background:rgba(220,53,69,.08);
+      border:1px solid rgba(220,53,69,.25);
+      color:#b91c1c; font-size:13px; font-weight:700;
+      margin-bottom:10px;
+    }
+
+    .hero-card{
+      border:1px solid var(--border);
+      background:linear-gradient(160deg,#f4fafa,#e6f7f5);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:24px;
+      height:100%;
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .hero-card h3{margin:0 0 8px; font-size:18px;}
+    .hero-card p{margin:0 0 14px; color:var(--muted); font-size:14px;}
+    .mini-list{display:grid; gap:10px; margin-top:10px;}
+    .mini-item{
+      border:1px solid rgba(0,179,164,.2);
+      border-radius:14px; background:#fff;
+      padding:12px 14px;
+    }
+    .mini-item b{display:block; font-size:14px; color:var(--text)}
+    .mini-item span{display:block; color:var(--muted); font-size:13px; margin-top:2px}
+
+    /* ── Alert strip ── */
+    .alert-strip{
+      background:linear-gradient(90deg,var(--teal),var(--teal-2));
+      color:#fff; padding:14px 0; text-align:center;
+      font-weight:700; font-size:15px; letter-spacing:.01em;
+    }
+
+    /* ── Sections ── */
+    section{padding:28px 0}
+    .section-title{margin:0 0 10px; font-size:24px; letter-spacing:-.2px;}
+    .section-desc{margin:0 0 20px; color:var(--muted); max-width:78ch;}
+
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+    .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
+
+    .card{
+      border:1px solid var(--border);
+      background:#fff; border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 6px 20px rgba(0,150,136,.07);
+      transition:box-shadow .2s;
+    }
+    .card:hover{box-shadow:0 10px 28px rgba(0,150,136,.14)}
+    .card-icon{
+      width:44px; height:44px; border-radius:12px;
+      background:linear-gradient(135deg,rgba(0,179,164,.15),rgba(0,150,136,.08));
+      display:flex; align-items:center; justify-content:center;
+      font-size:22px; margin-bottom:12px;
+    }
+    .card h4{margin:0 0 6px; font-size:16px;}
+    .card p{margin:0; color:var(--muted); font-size:14px;}
+
+    /* Risk cards */
+    .risk-card{
+      border:1px solid rgba(220,53,69,.2);
+      background:rgba(220,53,69,.03);
+    }
+    .risk-card .card-icon{
+      background:rgba(220,53,69,.1);
+    }
+
+    /* Solution cards */
+    .solution-card{
+      border:1px solid rgba(0,179,164,.25);
+      background:linear-gradient(160deg,#f4fafa,#fff);
+    }
+    .solution-card .card-icon{
+      background:linear-gradient(135deg,rgba(0,179,164,.2),rgba(0,150,136,.1));
+    }
+
+    /* Step cards */
+    .step-number{
+      width:36px; height:36px; border-radius:50%;
+      background:linear-gradient(135deg,var(--teal),var(--teal-2));
+      color:#fff; display:flex; align-items:center; justify-content:center;
+      font-weight:800; font-size:15px; margin-bottom:12px; flex-shrink:0;
+    }
+
+    /* Checklist */
+    .checklist{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
+    .checklist li{
+      display:flex; align-items:flex-start; gap:10px;
+      font-size:15px; color:var(--text);
+    }
+    .check-icon{
+      flex-shrink:0; margin-top:2px;
+      color:var(--teal); font-size:17px; font-weight:900;
+    }
+
+    /* Warning box */
+    .warning-box{
+      background:rgba(220,53,69,.05);
+      border:1px solid rgba(220,53,69,.22);
+      border-radius:var(--radius);
+      padding:20px 22px;
+    }
+    .warning-box h3{margin:0 0 10px; color:#b91c1c; font-size:18px;}
+    .warning-box p{margin:0; color:var(--muted); font-size:14px;}
+
+    /* CTA section */
+    .cta-section{
+      background:linear-gradient(135deg,var(--teal),var(--teal-2));
+      border-radius:var(--radius);
+      padding:32px 36px;
+      color:#fff;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:20px; flex-wrap:wrap;
+    }
+    .cta-section h2{margin:0 0 6px; font-size:24px; color:#fff;}
+    .cta-section p{margin:0; font-size:15px; opacity:.85;}
+    .btn-white{
+      background:#fff; color:var(--teal-dark);
+      border:none; padding:14px 28px;
+    }
+    .btn-white:hover{box-shadow:0 10px 28px rgba(0,0,0,.18)}
+
+    /* ── Form ── */
+    .form-wrap{
+      border:1px solid var(--border);
+      background:linear-gradient(180deg,#ffffff,#f4fafa);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+    form{display:grid; gap:14px; margin-top:14px;}
+    .row-2{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+    label{font-size:13px; color:var(--muted); font-weight:700; display:block; margin-bottom:4px;}
+    input,textarea,select{
+      width:100%; border:1px solid var(--border);
+      border-radius:14px; padding:12px 14px;
+      font-size:15px; outline:none; background:#fff;
+      font-family:inherit;
+    }
+    textarea{min-height:110px; resize:vertical;}
+    input:focus,textarea:focus,select:focus{
+      border-color:var(--teal);
+      box-shadow:0 0 0 4px rgba(0,179,164,.12);
+    }
+    .form-actions{
+      display:flex; gap:12px; flex-wrap:wrap;
+      align-items:center; justify-content:flex-start; margin-top:4px;
+    }
+    .legal{margin:0; color:var(--muted); font-size:12.5px; max-width:70ch;}
+    .status{
+      display:none; margin-top:10px; padding:14px;
+      border-radius:14px; border:1px solid var(--border);
+      background:#fff; color:var(--text); font-size:14px;
+    }
+    .status.ok{border-color:rgba(20,120,60,.28); background:rgba(20,120,60,.06);}
+    .status.err{border-color:rgba(180,40,40,.28); background:rgba(180,40,40,.06);}
+
+    /* ── Footer ── */
+    footer{
+      padding:28px 0; border-top:1px solid var(--border);
+      color:var(--muted); font-size:13px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width:980px){
+      h1{font-size:32px;}
+      .hero-grid{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr;}
+      .grid-2{grid-template-columns:1fr;}
+      .cta-section{flex-direction:column; text-align:center;}
+    }
+    @media (max-width:560px){
+      .row-2{grid-template-columns:1fr;}
+      .topbar-inner{height:auto; padding:12px 0;}
+      .nav-actions{flex-wrap:wrap; justify-content:flex-end;}
+      .cta-section{padding:24px 20px;}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ============================================================
+       GOOGLE TAG MANAGER (noscript)
+  ============================================================ -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Alerta de urgência fixo no topo -->
+  <div class="alert-strip">
+    Atenção: a nova NR-1 entra em vigor em <strong>maio de 2026</strong> — sua empresa precisa agir agora
+  </div>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <a class="brand" href="https://interweg.com.br/" aria-label="Interweg Seguros">
+          <img src="logo_interweg.webp" alt="Interweg Seguros" class="brand-logo"/>
+        </a>
+        <div class="nav-actions">
+          <a class="btn btn-outline" href="#o-que-muda">O que muda</a>
+          <a class="btn btn-primary" href="#form">Quero me adequar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="kicker">
+              <span class="kicker-dot"></span>
+              Portaria 1.419/2024 — vigência maio 2026
+            </div>
+            <div class="deadline-badge">Menos de 2 meses para a nova exigência</div>
+            <h1>Sua empresa está preparada para a <em>nova NR-1</em>?</h1>
+            <p class="subtitle">
+              A partir de maio, riscos psicossociais (estresse, burnout, ansiedade e assédio) passam a ser <strong>obrigatórios</strong> no Programa de Gerenciamento de Riscos.
+            </p>
+            <p class="subtitle" style="font-size:16px;">
+              A Interweg conecta estratégia, dados e tecnologia para implementar a NR-1 na prática, sem burocracia e com cuidado real.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#form">Quero me adequar agora</a>
+              <a class="btn" href="#solucao">Ver a solução</a>
+            </div>
+
+            <p class="note">Consultoria + Tecnologia + Dados. Tudo integrado para a sua empresa.</p>
+          </div>
+
+          <aside class="hero-card" aria-label="Destaques da NR-1">
+            <div>
+              <h3>O que a nova NR-1 exige</h3>
+              <p>A Portaria 1.419/2024 amplia o escopo do PGR para incluir fatores de risco psicossocial no ambiente de trabalho.</p>
+
+              <div class="mini-list">
+                <div class="mini-item">
+                  <b>Gestão de riscos psicossociais</b>
+                  <span>Estresse, burnout, ansiedade e assédio entram no PGR.</span>
+                </div>
+                <div class="mini-item">
+                  <b>Monitoramento contínuo</b>
+                  <span>Identificar, avaliar e controlar riscos periodicamente.</span>
+                </div>
+                <div class="mini-item">
+                  <b>Evidências documentais</b>
+                  <span>Registros de ações e programas de saúde mental.</span>
+                </div>
+                <div class="mini-item">
+                  <b>Cultura de cuidado</b>
+                  <span>Mais do que compliance — transformação organizacional.</span>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn btn-primary" style="margin-top:18px;" href="#form">Agendar consulta gratuita</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── O QUE MUDA ── -->
+    <section id="o-que-muda">
+      <div class="container">
+        <h2 class="section-title">O que muda com a nova NR-1</h2>
+        <p class="section-desc">
+          Antes, o PGR cobria principalmente riscos físicos, químicos e biológicos. Agora, os riscos psicossociais ganham o mesmo peso legal e ignorá-los tem consequências sérias.
+        </p>
+
+        <div class="grid-3">
+          <div class="card risk-card">
+            <h4>Estresse ocupacional</h4>
+            <p>Pressão excessiva, sobrecarga de tarefas e metas inatingíveis passam a ser fatores de risco a serem gerenciados.</p>
+          </div>
+          <div class="card risk-card">
+            <h4>Burnout e ansiedade</h4>
+            <p>Esgotamento profissional reconhecido como doença do trabalho, exigindo prevenção ativa e acompanhamento.</p>
+          </div>
+          <div class="card risk-card">
+            <h4>Assédio moral e sexual</h4>
+            <p>Ambientes tóxicos e práticas de assédio precisam ser identificados, registrados e eliminados no PGR.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;">
+          <div class="warning-box">
+            <h3>Qual é o risco de não se adequar?</h3>
+            <p>
+              Empresas que não implementarem a gestão de riscos psicossociais estarão sujeitas a autuações do Ministério do Trabalho, ações trabalhistas por doenças ocupacionais, afastamentos prolongados não gerenciados e danos à reputação como empregadora. O custo de não agir é muito maior do que o de se preparar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SOLUÇÃO INTERWEG ── -->
+    <section id="solucao" style="background:var(--card); border-radius:var(--radius); margin:0 0 10px;">
+      <div class="container" style="padding-top:28px; padding-bottom:28px;">
+        <h2 class="section-title">Solução completa de saúde digital com a Interweg</h2>
+        <p class="section-desc">
+          Não é só sobre cumprir a NR-1. É sobre transformar saúde em estratégia. Através das nossas ferramentas de IA, conectamos colaboradores, empresas e profissionais de saúde em um ecossistema integrado.
+        </p>
+
+        <div class="grid-3">
+          <div class="card solution-card">
+            <h4>Atendimento médico e psicológico online</h4>
+            <p>Mais de 30 especialidades disponíveis. Acesso rápido para colaboradores, sem deslocamento e com baixo custo por consulta.</p>
+          </div>
+          <div class="card solution-card">
+            <h4>Programas de saúde mental contínuos</h4>
+            <p>Acompanhamento estruturado, com triagem, suporte psicológico e programas de prevenção ao burnout e ao estresse crônico.</p>
+          </div>
+          <div class="card solution-card">
+            <h4>Gestão com dados para prevenção</h4>
+            <p>Relatórios populacionais, indicadores de saúde e alertas que embasam decisões do RH e da liderança com evidências reais.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;">
+          <div class="grid-2">
+            <div class="card solution-card">
+                <h4>IA para gestão de saúde corporativa</h4>
+              <p>Tecnologia que identifica padrões de risco na população, antecipa afastamentos e orienta ações preventivas antes que o problema escale.</p>
+            </div>
+            <div class="card solution-card">
+                <h4>Consultoria para adequação ao PGR</h4>
+              <p>Nossa equipe apoia a empresa em todo o processo: mapeamento de riscos psicossociais, documentação e implementação da NR-1 na prática.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px; text-align:center; font-size:17px; color:var(--teal-dark); font-weight:700;">
+          Conectamos pessoas e saúde para gerar <strong>prevenção, cuidado e eficiência na gestão.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PARA QUEM É ── -->
+    <section id="para-quem">
+      <div class="container">
+        <h2 class="section-title">Para quem é esta solução</h2>
+        <p class="section-desc">
+          Qualquer empresa que tenha colaboradores CLT precisa se adequar à nova NR-1. Mas alguns perfis têm urgência ainda maior.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h4>Empresas com mais de 20 colaboradores</h4>
+            <p>Obrigação de ter PGR estruturado e documentado com inclusão dos riscos psicossociais.</p>
+          </div>
+          <div class="card">
+            <h4>RH e Gestores de Saúde Ocupacional</h4>
+            <p>Profissionais que precisam de ferramentas e parceiros para implementar a norma com eficiência.</p>
+          </div>
+          <div class="card">
+            <h4>Lideranças que querem se antecipar</h4>
+            <p>Empresas que enxergam saúde mental como estratégia competitiva, não apenas como custo ou obrigação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COMO FUNCIONA ── -->
+    <section id="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Como funciona</h2>
+        <p class="section-desc">
+          Um processo consultivo e prático, do diagnóstico à implementação. Sua empresa não precisa navegar sozinha nessa mudança.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="step-number">1</div>
+            <h4>Diagnóstico inicial</h4>
+            <p>Entendemos o cenário atual da sua empresa: tamanho, setor, riscos mapeados e lacunas na adequação à NR-1.</p>
+          </div>
+          <div class="card">
+            <div class="step-number">2</div>
+            <h4>Proposta personalizada</h4>
+            <p>Montamos uma solução sob medida: tecnologia de saúde digital + consultoria para adequação ao PGR.</p>
+          </div>
+          <div class="card">
+            <div class="step-number">3</div>
+            <h4>Implementação e acompanhamento</h4>
+            <p>Ativamos a plataforma, apoiamos a documentação do PGR e acompanhamos resultados com dados em tempo real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA INTERMEDIÁRIO ── -->
+    <section>
+      <div class="container">
+        <div class="cta-section">
+          <div>
+            <h2>Não espere a fiscalização chegar</h2>
+            <p>Empresas que se antecipam não apenas se adequam, se fortalecem. Fale com um especialista e saiba como implementar a NR-1 na prática.</p>
+          </div>
+          <a class="btn btn-white" href="#form">Quero uma análise gratuita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CHECKLIST ── -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">O que a Interweg entrega para sua empresa</h2>
+        <p class="section-desc">Uma solução integrada que une tecnologia, cuidado real e conformidade legal.</p>
+
+        <div class="grid-2">
+          <ul class="checklist">
+            <li><span class="check-icon">+</span> Atendimento médico e psicológico online (30+ especialidades)</li>
+            <li><span class="check-icon">+</span> Pronto atendimento 24h/7 dias por semana</li>
+            <li><span class="check-icon">+</span> Programas estruturados de saúde mental</li>
+            <li><span class="check-icon">+</span> Triagem e acompanhamento contínuo de colaboradores</li>
+          </ul>
+          <ul class="checklist">
+            <li><span class="check-icon">+</span> Gestão populacional com dados e relatórios gerenciais</li>
+            <li><span class="check-icon">+</span> IA para identificação e prevenção de riscos</li>
+            <li><span class="check-icon">+</span> Apoio na documentação do PGR (NR-1)</li>
+            <li><span class="check-icon">+</span> Consultoria especializada em saúde corporativa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FORMULÁRIO ── -->
+    <section id="form">
+      <div class="container">
+        <h2 class="section-title">Fale com um especialista</h2>
+        <p class="section-desc">
+          Preencha os dados abaixo e um especialista da Interweg entrará em contato para entender o cenário da sua empresa e apresentar a melhor solução para a NR-1.
+        </p>
+
+        <div class="form-wrap">
+          <form id="leadForm" novalidate>
+            <div class="row-2">
+              <div>
+                <label for="name">Seu nome</label>
+                <input id="name" name="name" type="text" placeholder="Nome completo" required />
+              </div>
+              <div>
+                <label for="email">E-mail corporativo</label>
+                <input id="email" name="email" type="email" placeholder="voce@empresa.com.br" required />
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div>
+                <label for="phone">WhatsApp</label>
+                <input id="phone" name="phone" type="tel" placeholder="(11) 90000-0000" required />
+              </div>
+              <div>
+                <label for="company">Empresa</label>
+                <input id="company" name="company" type="text" placeholder="Nome da empresa" required />
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div>
+                <label for="employees">Número de colaboradores</label>
+                <select id="employees" name="employees">
+                  <option value="">Selecione</option>
+                  <option>20 a 50</option>
+                  <option>51 a 100</option>
+                  <option>101 a 300</option>
+                  <option>301 a 500</option>
+                  <option>Mais de 500</option>
+                </select>
+              </div>
+              <div>
+                <label for="role">Seu cargo / área</label>
+                <input id="role" name="role" type="text" placeholder="Ex: Gerente de RH, CEO, Diretor" />
+              </div>
+            </div>
+
+            <div>
+              <label for="challenge">Qual é o maior desafio da sua empresa em relação à NR-1?</label>
+              <textarea
+                id="challenge"
+                name="challenge"
+                rows="4"
+                placeholder="Ex: não temos PGR atualizado, precisamos de solução de saúde mental, não sabemos por onde começar..."></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Quero uma análise gratuita</button>
+
+              <a
+                class="btn btn-whatsapp"
+                id="btnWhatsapp"
+                href="https://wa.me/5531987379310?text=Olá!%20Quero%20saber%20como%20a%20Interweg%20pode%20ajudar%20minha%20empresa%20a%20se%20adequar%20à%20nova%20NR-1."
+                target="_blank"
+                rel="noopener noreferrer">
+                Falar no WhatsApp
+              </a>
+            </div>
+
+            <p class="legal" style="margin-top:10px;">
+              Seus dados serão usados apenas para contato sobre adequação à NR-1. Você pode solicitar remoção a qualquer momento.
+            </p>
+
+            <div id="status" class="status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FECHAMENTO ── -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">Não é só sobre cumprir a NR-1.</h2>
+        <p class="section-desc">
+          É sobre transformar saúde em estratégia. Empresas que investem no bem-estar dos colaboradores reduzem afastamentos, aumentam produtividade e se tornam destino de talentos. A Interweg está pronta para ser o parceiro da sua empresa nessa transformação.
+        </p>
+        <a class="btn btn-primary" href="#form">Fale com um especialista agora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between;">
+        <div>Interweg Corretora de Seguros © <span id="year"></span></div>
+        <div>
+          <a href="/politica-de-privacidade">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const FORM_ENDPOINT = "./send.php";
+
+    const $ = (id) => document.getElementById(id);
+    $("year").textContent = new Date().getFullYear();
+
+    function setStatusEl(el, message, type) {
+      el.className = "status " + (type || "");
+      el.textContent = message;
+      el.style.display = "block";
+    }
+
+    function normalizePhoneBR(phone) {
+      return (phone || "").replace(/\D+/g, "");
+    }
+
+    // ============================================================
+    // RASTREAMENTO DE EVENTOS — GA4 + GTM dataLayer
+    // ============================================================
+    function trackEvent(eventName, params) {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, params);
+      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event: eventName }, params));
+    }
+
+    // Clique no botão WhatsApp
+    document.getElementById('btnWhatsapp').addEventListener('click', function () {
+      trackEvent('whatsapp_click', {
+        event_category: 'lead',
+        event_label: 'whatsapp_cta_nr1',
+        page_section: 'form'
+      });
+    });
+
+    // Cliques nos CTAs que levam ao form
+    document.querySelectorAll('a[href="#form"].btn-primary, a[href="#form"].btn-white').forEach(function (el) {
+      el.addEventListener('click', function () {
+        trackEvent('cta_click', {
+          event_category: 'engajamento',
+          event_label: el.textContent.trim(),
+          page_section: 'nr1_landing'
+        });
+      });
+    });
+
+    // Form submit
+    $("leadForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      trackEvent('form_submit_attempt', {
+        event_category: 'lead',
+        event_label: 'nr1_interweg'
+      });
+
+      const payload = {
+        name: $("name").value.trim(),
+        email: $("email").value.trim(),
+        phone: normalizePhoneBR($("phone").value),
+        company: $("company").value.trim(),
+        employees: $("employees").value.trim(),
+        role: $("role").value.trim(),
+        challenge: $("challenge").value.trim(),
+        source: "landing_nr1",
+        pageUrl: window.location.href,
+        userAgent: navigator.userAgent
+      };
+
+      if (!payload.name || !payload.email || !payload.phone || !payload.company) {
+        setStatusEl($("status"), "Por favor, preencha Nome, E-mail, WhatsApp e Empresa.", "err");
+        trackEvent('form_error', {
+          event_category: 'lead',
+          event_label: 'campos_obrigatorios_faltando'
+        });
+        return;
+      }
+
+      setStatusEl($("status"), "Enviando seus dados...", "");
+
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        const json = await res.json().catch(() => ({}));
+
+        if (!res.ok || !json.ok) {
+          throw new Error(json.message || "Falha ao enviar");
+        }
+
+        e.target.reset();
+        setStatusEl($("status"), "Recebemos sua solicitação! Em breve um especialista da Interweg entrará em contato.", "ok");
+
+        trackEvent('generate_lead', {
+          event_category: 'lead',
+          event_label: 'nr1_interweg',
+          company_size: payload.employees,
+          role: payload.role
+        });
+
+      } catch (err) {
+        console.error(err);
+        setStatusEl($("status"), "Não foi possível enviar agora. Tente novamente ou fale pelo WhatsApp.", "err");
+        trackEvent('form_error', {
+          event_category: 'lead',
+          event_label: 'erro_envio_servidor'
+        });
+      }
+    });
+  </script>
+</body>
+</html>
